@@ -15,6 +15,23 @@ using namespace std;
                 cout<<"This Person is Sleeping"<<endl;
             }
     };
+    class Student
+    {
+        public:
+            string name;
+            int Class;
+            double gpa;
+    Student(string name,int Class,double gpa)
+    {
+        this->name=name;
+        this->Class=Class;
+        this->gpa=gpa;
+        
+        cout<<"Name:"<<name<<endl;
+        cout<<"Class:"<<Class<<endl;
+        cout<<"GPA:"<<gpa<<endl;
+    }
+    };
 int main()
 {
     Human human1;
@@ -28,6 +45,9 @@ int main()
     human1.eat();
     human1.drink();
     human1.sleep();
+    cout<<"/******************************************/\n";
+/*this line about the Constructor*/
+    Student("Mike Tyson",11,3.33);
 
 return 0;
 }
